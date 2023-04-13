@@ -4,12 +4,13 @@ A project where we attempt to build two robots to FIGHT TO THE DEATH.
 Each robot has some health, a laser, and a laser receiver. You shoot the laser, trying to hit the receiver. If you do, the other robot's health decrements. Last one standing wins!
 
 ## How to dd the Pi Image
-Steps to copy the pi image from one SD card to another.\n
+Steps to copy the pi image from one SD card to another.  
 Based on [this askubuntu question](https://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command).
+
+[insert the good micro sd]
 
 ```bash
 
-[insert the good micro sd]
 joe@joe-ubuntu-20:~/iso$ df -h
 joe@joe-ubuntu-20:~/iso$ sudo umount /dev/sda1
 joe@joe-ubuntu-20:~/iso$ sudo umount /dev/sda2
