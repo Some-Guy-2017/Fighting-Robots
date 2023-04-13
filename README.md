@@ -8,16 +8,16 @@ Steps to copy the pi image from one SD card to another.
 Based on [this askubuntu question](https://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command).
 
 (insert sd with image)
-\$HOME/iso$ df -h
-\$HOME/iso$ sudo umount /dev/sda1
-\$HOME/iso$ sudo umount /dev/sda2
-\$HOME/iso/pi$ sudo dd if=/dev/sda of=\$HOME/iso/pi/pi_img.img bs=4M status=progress
+\\$HOME/iso$ df -h
+\\$HOME/iso$ sudo umount /dev/sda1
+\\$HOME/iso$ sudo umount /dev/sda2
+\\$HOME/iso/pi$ sudo dd if=/dev/sda of=\\$HOME/iso/pi/pi_img.img bs=4M status=progress
 7939817472 bytes (7.9 GB, 7.4 GiB) copied, 415 s, 19.1 MB/s
 1895+0 records in
 1895+0 records out
 7948206080 bytes (7.9 GB, 7.4 GiB) copied, 415.809 s, 19.1 MB/s
 (wait a while, about 10min?)
 (swap out for the micro sd you want to copy to)
-\$HOME/iso$ sudo umount /dev/sda1
-\$HOME/iso$ sudo umount /dev/sda2
-\$HOME/iso/pi$ sudo dd of=/dev/sda if=\$HOME/iso/pi/pi_img.img bs=4M status=progress
+\\$HOME/iso$ sudo umount /dev/sda1
+\\$HOME/iso$ sudo umount /dev/sda2
+\\$HOME/iso/pi$ sudo dd of=/dev/sda if=\\$HOME/iso/pi/pi_img.img bs=4M status=progress
