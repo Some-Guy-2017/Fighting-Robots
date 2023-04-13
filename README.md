@@ -7,7 +7,7 @@ Each robot has some health, a laser, and a laser receiver. You shoot the laser, 
 Steps to copy the pi image from one SD card to another.
 Based on [this askubuntu question](https://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command).
 
-[insert sd with image]
+\[insert sd with image\]
 ~/iso$ df -h
 ~/iso$ sudo umount /dev/sda1
 ~/iso$ sudo umount /dev/sda2
